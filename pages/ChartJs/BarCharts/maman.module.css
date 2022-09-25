@@ -1,0 +1,9 @@
+.box {
+    height: 500px;
+    max-height: 250px;
+    overflow-y: scroll;
+}
+
+.subbox{
+    height: 700px;
+}

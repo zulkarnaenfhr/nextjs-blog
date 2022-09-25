@@ -1,0 +1,37 @@
+{
+    "private": true,
+    "type": "module",
+    "module": "commonjs",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "test": "jest"
+    },
+    "dependencies": {
+        "axios": "^0.27.2",
+        "chart.js": "^3.9.1",
+        "chartjs-plugin-gradient": "^0.5.1",
+        "next": "latest",
+        "react": "17.0.2",
+        "react-chartjs-2": "^4.3.1",
+        "react-circular-gradient-progress": "^1.1.1",
+        "react-circular-progressbar": "^2.1.0",
+        "react-dom": "17.0.2",
+        "react-multi-carousel": "^2.8.2",
+        "react-multicolor-circular-progress-bar": "^1.0.3",
+        "react-slick": "^0.29.0",
+        "sheetjs": "^2.0.0",
+        "slick-carousel": "^1.8.1",
+        "xlsx": "^0.18.5"
+    },
+    "devDependencies": {
+        "@testing-library/jest-dom": "^5.16.4",
+        "@testing-library/react": "^13.3.0",
+        "babel-jest": "^28.1.2",
+        "faker": "^5.5.3",
+        "identity-obj-proxy": "^3.0.0",
+        "jest": "^28.1.2",
+        "react-test-renderer": "^18.2.0"
+    }
+}
