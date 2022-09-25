@@ -5,6 +5,21 @@ export default function Home() {
         <div className="container">
             <Head>
                 <title>Create Next App</title>
+                <script type="application/ld+json">{`
+                    {
+                        "@context": "https://schema.org",
+                        "@type": "WebSite",
+                        "url": "https://www.example.com/",
+                        "potentialAction": {
+                            "@type": "SearchAction",
+                            "target": {
+                            "@type": "EntryPoint",
+                            "urlTemplate": "https://query.example.com/search?q={search_term_string}"
+                            },
+                            "query-input": "required name=search_term_string"
+                        }
+                        }
+                    `}</script>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
