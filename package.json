@@ -32,7 +32,7 @@
         "react-wavify": "^1.6.3",
         "sheetjs": "^2.0.0",
         "slick-carousel": "^1.8.1",
-        "smooth-scrollbar": "^8.8.1",
+        "smooth-scrollbar-react": "^2.4.1",
         "sweetalert2": "^11.6.7",
         "territory-indonesia": "^0.1.4",
         "xlsx": "^0.18.5"
