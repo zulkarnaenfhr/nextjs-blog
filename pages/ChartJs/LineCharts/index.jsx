@@ -1,6 +1,5 @@
 import React from "react";
 // import Chart from "chart.js/auto";
-import faker from "faker";
 import { Line } from "react-chartjs-2";
 import styles from "./maman.module.css";
 import gradient from "chartjs-plugin-gradient";
@@ -65,14 +64,40 @@ export default function index() {
     function getGradient(ctx, chartArea) {
         let gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
         gradient.addColorStop(0, "white");
-        gradient.addColorStop(1, "blue");
+        gradient.addColorStop(1, "rgba(0, 33, 69, 0.4)");
 
         return gradient;
     }
+
+    function getGradient2(ctx, chartArea) {
+        let gradient = ctx.createLinearGradient(0, chartArea.bottom, 0, chartArea.top);
+        gradient.addColorStop(0, "white");
+        gradient.addColorStop(1, "rgba(238, 46, 36, 0.5)");
+
+        return gradient;
+    }
+
     const data = () => {
         return {
             labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
             datasets: [
+                {
+                    tension: 0.4,
+                    label: "First dataset",
+                    data: [52, 78, 85, 37, 21, 54],
+                    fill: "start",
+                    backgroundColor: function (context) {
+                        const chart = context.chart;
+                        const { ctx, chartArea } = chart;
+
+                        if (!chartArea) {
+                            // This case happens on initial chart load
+                            return;
+                        }
+                        return getGradient(ctx, chartArea);
+                    },
+                    borderColor: "rgba(75,192,192,1)",
+                },
                 {
                     tension: 0.4,
                     label: "First dataset",
@@ -86,7 +111,7 @@ export default function index() {
                             // This case happens on initial chart load
                             return;
                         }
-                        return getGradient(ctx, chartArea);
+                        return getGradient2(ctx, chartArea);
                     },
                     borderColor: "rgba(75,192,192,1)",
                 },

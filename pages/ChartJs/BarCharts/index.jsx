@@ -70,9 +70,7 @@ export default function index() {
         },
         responsive: true,
         plugins: {
-            legend: {
-                position: "right",
-            },
+            legend: false,
             title: {
                 display: true,
                 text: "Chart.js Horizontal Bar Chart",

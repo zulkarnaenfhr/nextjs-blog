@@ -1,10 +1,18 @@
-// posts will be populated at build time by getStaticProps()
+import AppContext from "../../Components/AppContext";
+import { useContext } from "react";
+import Link from "next/link";
+
 function Index(props) {
+    const context = useContext(AppContext);
+
     console.log(props);
     return (
         <div>
+            <h1>{context.nameContext}</h1>
+            <Link href={"/LandingPage"} passHref>
+                Landing Page
+            </Link>
             <h1>mamamn</h1>
-            <ul>{props.maman}</ul>
         </div>
     );
 }

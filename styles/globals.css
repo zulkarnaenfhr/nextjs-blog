@@ -21,3 +21,7 @@
 .slick-next:before {
     color: black;
 }
+
+.swal2-modal {
+  direction: rtl;
+}

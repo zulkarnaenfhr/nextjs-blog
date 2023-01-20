@@ -1,5 +1,5 @@
 import React from "react";
-import { buildStyles, CircularProgressbar } from "react-circular-progressbar";
+import { CircularProgressbar } from "react-circular-progressbar";
 import "react-circular-progressbar/dist/styles.css";
 import GradientSVG from "./gradientSVG";
 
@@ -11,7 +11,7 @@ const Index = () => {
         <div>
             <div
                 style={{
-                    width: "550px",
+                    width: "190px",
                 }}
             >
                 <GradientSVG />
@@ -23,14 +23,14 @@ const Index = () => {
                     styles={{
                         path: { stroke: `url(#${idCSS})`, height: "100%", transform: "rotate(0.75turn)", transformOrigin: "center center", strokeLinecap: "butt" },
                         trail: {
-                            stroke: "#2e2e2e",
+                            stroke: "#EBECF2",
                             transform: "rotate(0.75turn)",
                             transformOrigin: "center center",
                             strokeLinecap: "butt",
                         },
                         text: {
                             // Text color
-                            fill: "#ff0606",
+                            fill: "transparent",
                             // Text size
                             fontSize: "16px",
                             marginTop: "20px",
